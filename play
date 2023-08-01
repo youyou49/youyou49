@@ -1,0 +1,7 @@
+MyGo test fast play.py
+from board fast import *   #1
+board = Board(size = 9)
+bot1= None #2
+bot2 = Robot(ai='SD', boardSize = 9,model = pd dense')   #2
+game = Game(board)
+print(game.run(play b = bot1,play w = bot2,isprint = True)) #3
