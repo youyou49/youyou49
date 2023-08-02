@@ -1,0 +1,7 @@
+mysql> select id from dept where json_value->'$.deptLeaderId'='4' and json_value->'$.deptName' like '%word%';
++----+
+| id |
++----+
+|  2 |
++----+
+1 row in set (0.00 sec)
