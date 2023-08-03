@@ -1,0 +1,9 @@
+[root@daxia ~]# ls /daxia/
+test.txt
+[root@daxia ~]# cat /daxia/test.txt 
+aaaaaaaaaa
+bbbbbb
+ccccccc
+daxia
+[root@daxia ~]# ls /boot/grub2/
+fonts  grub.cfg  grubenv  i386-pc  locale
