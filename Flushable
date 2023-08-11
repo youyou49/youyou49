@@ -1,0 +1,8 @@
+public interface Closeable extends AutoCloseable {
+	public void close() throws IOException;
+}
+
+//	Flushable
+public interface Flushable {
+	public void flush() throws IOException;
+}
