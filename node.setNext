@@ -1,0 +1,21 @@
+  else {
+                if (node != null)
+                    node.setNext(first);
+                else
+                    node = new HashEntry<K,V>(hash, key, value, first);
+                int c = count + 1;
+                if (c > threshold && tab.length < MAXIMUM_CAPACITY)
+                    rehash(node);
+                else
+                    setEntryAt(tab, index, node);
+                ++modCount;
+                count = c;
+                oldValue = null;
+                break;
+            }
+        }
+    } finally {
+        unlock();
+    }
+    return oldValue;
+}
