@@ -1,0 +1,18 @@
+QFileInfo file("./background_image.jpg");
+if (!file.isFile())
+{
+    this->setStyleSheet("QWidget {background-color:white;}");
+}
+else
+{
+    this->setStyleSheet("QWidget {background-color:skyblue;}");
+}
+// label
+// default_label
+label->setPixmap(pix.scaled(defalut_label->size(),
+					         Qt::IgnoreAspectRatio,
+							 Qt::SmoothTransformation));
+label->setAutoFillBackground(true);
+
+#include <QFileInfo>
+#include <QPixmap>
